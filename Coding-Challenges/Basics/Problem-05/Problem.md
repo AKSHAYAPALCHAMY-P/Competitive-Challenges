@@ -1,0 +1,1 @@
+Calculate the sum of Numbers from 1 to 10.
