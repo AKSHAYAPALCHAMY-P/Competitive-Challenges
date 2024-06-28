@@ -1,6 +1,6 @@
-namespace PositiveNumberssOfAnArray
+namespace MaximumNumber
 {
-    public static class FindAPositivesOfAnArray
+    public class FindMaximumNumber
     {
         public static void Solution()
         {
@@ -11,18 +11,22 @@ namespace PositiveNumberssOfAnArray
 
             Console.WriteLine("Enter the array Elements:");
 
-            for (int i = 0; i < nSize; i++) 
+            for(int i = 0; i < nSize; i++)
             {
-                 nArray[i] = int.Parse(Console.ReadLine()); 
+                nArray[i] = int.Parse(Console.ReadLine());
             }
 
-            for(int i = 0; i <nSize; i++) 
+            int nMax = 0;
+            
+            for(int i = 0;i < nSize; i++)
             {
-                if(nArray[i]> 0)
+                if(nArray[i] > nMax)
                 {
-                    Console.WriteLine(nArray[i]);
+                    nMax = nArray[i];
                 }
             }
+
+            Console.WriteLine(nMax);
         }
     }
 }

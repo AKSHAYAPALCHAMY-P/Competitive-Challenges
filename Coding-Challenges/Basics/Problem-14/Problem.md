@@ -1,0 +1,1 @@
+First 10 Fibonacci numbers withoout recursion.

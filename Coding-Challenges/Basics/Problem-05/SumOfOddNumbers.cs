@@ -4,14 +4,17 @@ namespace SumOfNumbers
     {
         public static void Solution()
         {
-            int nTotal = 0;
+            Console.WriteLine("Enter the Value:");
+            int nTotal = int.Parse(Console.ReadLine());
 
-            for(int i = 1; i <= 10; i++) 
-            {
-                nTotal += i; 
-            }
+            //for(int i = 1; i <= 10; i++) 
+            //{
+            //    nTotal += i; 
+            //}
 
-            Console.WriteLine(nTotal);
+            int nResult = nTotal*(nTotal + 1) / 2;
+
+            Console.WriteLine(nResult);
         }
     }
 }
